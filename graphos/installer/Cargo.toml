@@ -1,0 +1,12 @@
+﻿# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-installer"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "installer"
+path = "src/main.rs"
+
+[dependencies]
+anyhow = "1"

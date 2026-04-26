@@ -1,0 +1,66 @@
+﻿# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[workspace]
+resolver = "2"
+# Only list crates that exist on disk. Phantom members cause cargo to fail.
+# The kernel and loader have different --target requirements, so we use
+# default-members = ["kernel"] and build the loader explicitly.
+members = [
+  "kernel",
+  "boot/uefi-loader",
+  "userspace/gfx",
+  "userspace/scene",
+  "userspace/compositor",
+  "userspace/init",
+  "userspace/servicemgr",
+  "userspace/graphd",
+  "userspace/modeld",
+  "userspace/trainerd",
+  "userspace/artifactsd",
+  "userspace/sysd",
+  "tools/pkgmgr",
+  "userspace/shell",
+  "userspace/greeter",
+  "apps/terminal",
+  "apps/files",
+  "apps/settings",
+  "apps/editor",
+  "apps/browser-lite",
+  "apps/ai-console",
+  "apps/ai-air-hockey",
+  "apps/shell3d",
+  "sdk/app-sdk",
+  "sdk/ui-sdk",
+  "sdk/graphhash",
+  "sdk/gl-sdk",
+  "sdk/graph-sdk",
+  "sdk/tool-sdk",
+  "sdk/wasm-sdk",
+  "userspace/apps/wasm-launcher",
+  "tools/appstore",
+  "tools/cryptsetup",
+  "tools/bench",
+  "installer",
+  "tools/fuzz",
+  "tools/oem-image",
+]
+exclude = [
+  "userspace/protected",
+]
+default-members = ["kernel"]
+
+[workspace.package]
+edition = "2024"
+license = "Apache-2.0"
+authors = ["Walsh Technical Group"]
+
+[workspace.dependencies]
+anyhow = "1"
+thiserror = "2"
+bitflags = "2"
+log = "0.4"
+spin = "0.9"
+uart_16550 = "0.3"
+x86_64 = "0.15"
+object = { version = "0.36", default-features = false, features = ["read", "elf"] }
+uefi = { version = "0.30", features = ["alloc", "global_allocator", "panic_handler"] }
+font8x8 = { version = "0.3", default-features = false, features = ["unicode"] }

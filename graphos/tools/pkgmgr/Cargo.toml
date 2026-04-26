@@ -1,0 +1,31 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "gpm"
+version = "0.1.0"
+edition = "2024"
+description = "GraphOS Package Manager — build, sign, install, and remove .gpkg driver packages"
+license = "Apache-2.0"
+authors = ["Walsh Technical Group"]
+
+[[bin]]
+name = "gpm"
+path = "src/main.rs"
+
+[dependencies]
+# ed25519 signing (host-side)
+ed25519-dalek = { version = "2", features = ["rand_core"] }
+rand = "0.8"
+# Archive packing / unpacking
+tar = "0.4"
+flate2 = "1"
+# SHA-256 for manifest digest
+sha2 = "0.10"
+# JSON manifest format
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+# CLI argument parsing
+clap = { version = "4", features = ["derive"] }
+# Hex encoding for keys / signatures
+hex = "0.4"
+# anyhow for error handling
+anyhow = "1"

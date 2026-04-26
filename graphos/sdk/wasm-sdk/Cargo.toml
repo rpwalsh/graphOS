@@ -1,0 +1,13 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-wasm-sdk"
+version = "1.0.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "GraphOS WASM SDK — WASI shim, capability ABI, .gapp bundle tooling"
+
+[lib]
+name = "graphos_wasm_sdk"
+path = "src/lib.rs"
+
+[dependencies]

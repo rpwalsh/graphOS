@@ -1,0 +1,31 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-protected-services"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+build = "build.rs"
+
+[profile.dev]
+panic = "abort"
+
+[profile.release]
+panic = "abort"
+opt-level = "z"
+codegen-units = 1
+lto = "thin"
+strip = "symbols"
+
+[dependencies]
+graphos-compositor = { path = "../compositor" }
+graphos-gfx = { path = "../gfx" }
+graphos-app-sdk = { path = "../../sdk/app-sdk" }
+graphos-ui-sdk = { path = "../../sdk/ui-sdk" }
+graphos-gl = { path = "../../sdk/gl-sdk" }
+libm = { version = "0.2", default-features = false }
+getrandom = { version = "0.2", default-features = false, features = ["custom"] }
+
+[[bin]]
+name = "cube"
+path = "src/bin/cube.rs"

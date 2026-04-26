@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "QEMU GDB Attach",
+      "type": "lldb",
+      "request": "custom",
+      "targetCreateCommands": [
+        "target create ${workspaceFolder}/target/x86_64-graphos-kernel/debug/graphos-kernel"
+      ],
+      "processCreateCommands": [
+        "gdb-remote localhost:1234"
+      ],
+      "preLaunchTask": "run-qemu"
+    }
+  ]
+}

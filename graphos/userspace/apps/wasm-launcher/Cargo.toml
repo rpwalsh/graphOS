@@ -1,0 +1,14 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-wasm-launcher"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+
+[[bin]]
+name = "wasm-launcher"
+path = "src/main.rs"
+
+[dependencies]
+graphos-app-sdk = { path = "../../../sdk/app-sdk" }

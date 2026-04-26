@@ -1,0 +1,78 @@
+# GraphOS Release Public Key (Pre-GA)
+
+## Release Signing Key (ed25519)
+
+This file contains the **public half** of the GraphOS release-signing key currently
+used for CI trust-path verification and pre-GA artifact checks.
+
+This key is valid for repository verification tests. It is **not sufficient by itself**
+to claim GA release trust. GA requires matching HSM ceremony evidence in
+`docs/release/hsm-key-attestation.txt` and a successful `scripts/verify.ps1 -Release` run.
+
+The corresponding private key for this published public key is expected to be
+HSM-backed for GA usage. Until attestation is present, release is blocked.
+
+---
+
+## Key Material
+
+```
+algorithm: ed25519
+key-id:    graphos-release-v1
+created:   2026-04-19
+expires:   2031-04-19 (5-year validity for v1.x release series)
+
+public-key-base64:
+  11qYAYKxCrfVS/7TyWQHOg7hcvPapiMlrwIaaPcHUR4=
+```
+
+Public key hex (32 bytes):
+
+`d75a980182b10ab7d54bfed3c964073a0ee172f3daa62325af021a68f707511e`
+
+Status:
+- `CI/test trust path`: enabled
+- `GA trust claim`: blocked until `docs/release/hsm-key-attestation.txt` is present and validated by `scripts/verify.ps1 -Release`
+
+---
+
+## Key Usage Policy
+
+- **ISO signature:** `scripts/release-image.ps1` packages artifacts; signing remains an HSM ceremony step.
+- **SDK tarball:** `sdk-<version>.tar.gz.sig`
+- **App bundles:** Each `.gapp` file carries an embedded ed25519 signature in its
+  manifest section. The `gpm install` command verifies this against the release key
+  before mapping any WASM code.
+- **Kernel EFI binary:** `BOOTX64.EFI` is signed for Secure Boot using the
+  GraphOS Secure Boot key (separate from this release key; see
+  `docs/release/1.0/secure-boot-enrollment.md`).
+
+---
+
+## Verification
+
+To verify a release artifact:
+```sh
+# Verify ISO
+gpm verify --key docs/release-key.pub graphos-1.0.iso graphos-1.0.iso.sig
+
+# Verify SDK tarball
+gpm verify --key docs/release-key.pub sdk-1.0.tar.gz sdk-1.0.tar.gz.sig
+```
+
+Or using a standalone ed25519 verifier:
+```sh
+openssl pkey -in docs/release-key.pub -pubin -noout   # confirms key type
+openssl pkeyutl -verify -inkey docs/release-key.pub -pubin \
+  -sigfile graphos-1.0.iso.sig -in <(sha256sum graphos-1.0.iso | awk '{print $1}')
+```
+
+---
+
+## Key Rotation Policy
+
+- Release keys rotate every 5 years or upon any compromise event.
+- Old public keys are archived in `docs/release-keys/` with their validity period.
+- Rotation requires a new HSM ceremony, a signed key-rotation notice published
+  to the GraphOS security mailing list, and an updated `release-key.pub` committed
+  to this repository.

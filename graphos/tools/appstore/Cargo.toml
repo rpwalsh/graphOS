@@ -1,0 +1,16 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-appstore"
+version = "0.1.0"
+edition = "2024"
+
+[[bin]]
+name = "gps"
+path = "src/main.rs"
+
+[dependencies]
+graphos-app-sdk = { path = "../../sdk/app-sdk" }
+graphos-ui-sdk  = { path = "../../sdk/ui-sdk"  }
+anyhow = "1"
+graphos-tool-sdk = { path = "../../sdk/tool-sdk" }
+hex = "0.4"

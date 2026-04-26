@@ -1,0 +1,5 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[toolchain]
+channel = "nightly"
+components = ["rustfmt", "clippy", "rust-src", "llvm-tools-preview"]
+profile = "minimal"

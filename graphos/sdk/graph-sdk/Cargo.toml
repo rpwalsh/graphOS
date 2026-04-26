@@ -1,0 +1,11 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-graph-sdk"
+version = "1.0.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "GraphOS graph query SDK — node/edge CRUD, UUID resolution, subscriptions"
+
+[lib]
+name = "graphos_graph_sdk"
+path = "src/lib.rs"

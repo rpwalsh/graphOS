@@ -1,0 +1,20 @@
+﻿# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-uefi-loader"
+version = "0.1.0"
+edition.workspace = true
+license.workspace = true
+
+[[bin]]
+name = "graphos-uefi-loader"
+path = "src/main.rs"
+required-features = ["uefi-app"]
+
+[features]
+default = []
+uefi-app = []
+
+[dependencies]
+uefi = { version = "0.30", features = ["alloc", "global_allocator", "panic_handler", "logger"] }
+object = { version = "0.36", default-features = false, features = ["read", "elf"] }
+log = { workspace = true }

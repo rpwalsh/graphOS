@@ -1,0 +1,14 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-tool-sdk"
+version = "1.0.0"
+edition = "2024"
+license = "Apache-2.0"
+description = "GraphOS tool SDK — gpm build helpers, manifest schema, signing utilities"
+
+[lib]
+name = "graphos_tool_sdk"
+path = "src/lib.rs"
+
+[dependencies]
+ed25519-dalek = "2"

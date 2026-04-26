@@ -1,0 +1,37 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-fuzz"
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+name = "graphos_fuzz"
+path = "src/lib.rs"
+
+[[bin]]
+name = "fuzz_syscall_dispatch"
+path = "fuzz_targets/fuzz_syscall_dispatch.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_vfs_path"
+path = "fuzz_targets/fuzz_vfs_path.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_capability_delegate"
+path = "fuzz_targets/fuzz_capability_delegate.rs"
+test = false
+doc = false
+
+[[bin]]
+name = "fuzz_tcp_state"
+path = "fuzz_targets/fuzz_tcp_state.rs"
+test = false
+doc = false
+
+[dependencies]
+libfuzzer-sys = "0.4"

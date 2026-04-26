@@ -1,0 +1,25 @@
+graph-manifest-v1
+
+# service <name> <critical|optional> <launcher> <path>
+# Channel UUIDs are derived at boot from service names (UUID v5); no static slot assignment.
+service init critical kernel /pkg/services/init.elf
+service servicemgr critical init /pkg/services/servicemgr.elf
+service graphd critical servicemgr /pkg/services/graphd.elf
+service modeld optional servicemgr /pkg/services/modeld.elf
+service trainerd optional servicemgr /pkg/services/trainerd.elf
+service artifactsd optional servicemgr /pkg/services/artifactsd.elf
+service sysd critical servicemgr /pkg/services/sysd.elf
+service compositor optional servicemgr /pkg/services/compositor.elf
+service sshd optional servicemgr /pkg/services/sshd.elf
+service netd optional servicemgr /pkg/services/netd.elf
+
+# depends <from> <to>
+depends init servicemgr
+depends servicemgr graphd
+depends servicemgr modeld
+depends servicemgr trainerd
+depends servicemgr artifactsd
+depends servicemgr sysd
+depends servicemgr compositor
+depends servicemgr sshd
+depends servicemgr netd

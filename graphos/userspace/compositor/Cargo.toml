@@ -1,0 +1,15 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-compositor"
+version = "0.1.0"
+edition = "2024"
+license = "Apache-2.0"
+publish = false
+
+[lib]
+path = "src/lib.rs"
+
+[dependencies]
+graphos-gfx   = { path = "../gfx" }
+graphos-scene = { path = "../scene" }
+libm          = { version = "0.2", default-features = false }

@@ -1,0 +1,80 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+
+# Visual Studio
+.vs/
+obj/
+*.vcxproj
+*.vcxproj.user
+*.slnx
+
+# Rust build artifacts — ALL target/ directories
+**/target/
+target/
+
+# Logs and captured output
+graphos/serial*.log
+graphos/qemu-debug.log
+graphos/boot_capture.log
+graphos/graphos_gl_test.log
+graphos/boot-run-current.txt
+graphos/boot-transcript.txt
+graphos/cmd3_output.txt
+graphos/modeld-check.txt
+graphos/host-test-check-current.txt
+graphos/host-test-check.txt
+check_graphos_gl.log
+check_shell3d.log
+check_shell3d_after_glfix.log
+*.log
+
+# Cargo captured output files
+graphos/sdk/gl-sdk/cargo_check.out
+graphos/sdk/gl-sdk/cargo_test*.out
+*.out
+
+# Binary archives (build outputs, not source)
+graphos/apps.zip
+graphos/tools.zip
+heterogeneousTemporalWalkEmbeddings.zip
+*.zip
+
+# Internal directory listing artifacts
+_ls.txt
+
+# Internal metadata
+metadata.json
+
+# Internal code-generation helper
+graphos/_write_makefile.py
+
+# One-time header application script
+add_headers.ps1
+
+# Internal/one-off scripts (not for public release)
+graphos/scripts/verify_full_system.ps1
+graphos/scripts/verify-desktop-handoff.ps1
+graphos/scripts/verify-f17-f18.ps1
+graphos/scripts/verify-gl-conformance.ps1
+graphos/scripts/coverage-gl-sdk.ps1
+graphos/scripts/coverage-uncovered-context-methods.ps1
+graphos/scripts/network-validate.ps1
+graphos/scripts/rollout-scce.ps1
+
+# Internal evaluation data
+graphos/assets/evals/
+
+# Internal metadata
+metadata.json
+
+# Internal/one-off scripts (not for public release)
+graphos/scripts/verify_full_system.ps1
+graphos/scripts/verify-desktop-handoff.ps1
+graphos/scripts/verify-f17-f18.ps1
+graphos/scripts/verify-gl-conformance.ps1
+graphos/scripts/coverage-gl-sdk.ps1
+graphos/scripts/coverage-uncovered-context-methods.ps1
+graphos/scripts/network-validate.ps1
+graphos/scripts/rollout-scce.ps1
+
+# Internal evaluation data
+graphos/assets/evals/

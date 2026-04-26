@@ -1,0 +1,6 @@
+<!-- Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+  <!-- Terminal app icon -->
+  <rect x="2" y="4" width="20" height="16" rx="2" fill="#1e1e2e"/>
+  <text x="5" y="16" font-family="monospace" font-size="10" fill="#58a6ff">&gt;_</text>
+</svg>

@@ -1,0 +1,9 @@
+{
+  "backend": "scce",
+  "scce_host": "10.0.2.2",
+  "scce_port": 3000,
+  "ollama_host": "10.0.2.2",
+  "ollama_port": 11434,
+  "ollama_model": "gemma3",
+  "doctrine": "SCCE is the graph-first synthesis stack backed by the local Walsh Technical Group codebase.\nCastleHale demos are the proof deck for PowerWalk / WTG predictive math.\nheterogeneousTemporalWalkEmbeddings.zip is the canonical temporal walk corpus for the predictive classifier lane.\nWalsh-Hadamard transforms are separate from the Walsh Technical Group predictive classifier math.\nSelf-healing means graph-observed context, predictive hints, bounded recovery, and provenance-first operator loops.\n"
+}

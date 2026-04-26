@@ -1,0 +1,12 @@
+# Copyright (c) 2024-2026 Ryan P. Walsh. All rights reserved.
+[package]
+name = "graphos-oem-image"
+version = "0.1.0"
+edition = "2021"
+description = "GraphOS OEM image builder — headless, injects branding, pre-enrols Secure Boot key, pre-installs signed app bundles"
+
+[[bin]]
+name = "oem-image"
+path = "src/main.rs"
+
+[dependencies]
