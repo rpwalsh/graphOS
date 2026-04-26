@@ -1,0 +1,987 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20260422200854
+Username: JUBILEE\react
+RunAs User: JUBILEE\react
+Configuration Name: 
+Machine: JUBILEE (Microsoft Windows NT 10.0.26200.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe -noexit -command try { . "c:\Users\react\AppData\Local\Programs\Microsoft VS Code Insiders\98b4d3e244\resources\app\out\vs\workbench\contrib\terminal\common\scripts\shellIntegration.ps1" } catch {}
+Process ID: 10616
+PSVersion: 5.1.26100.8115
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.26100.8115
+BuildVersion: 10.0.26100.8115
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+[boot] OVMF: C:\Program Files\qemu\share\edk2-x86_64-code.fd
+[boot] Building kernel...
+warning: profiles for the non root package will be ignored, specify profiles at the workspace root:
+package:   C:\Users\react\source\repos\graphOS\graphos\userspace\scene\Cargo.toml
+workspace: C:\Users\react\source\repos\graphOS\graphos\Cargo.toml
+   Compiling graphos-kernel v0.1.0 (C:\Users\react\source\repos\graphOS\graphos\kernel)
+error: failed to run custom build command for `graphos-kernel v0.1.0 (C:\Users\react\source\repos\graphOS\graphos\kernel)`
+System.Management.Automation.RemoteException
+Caused by:
+  process didn't exit successfully: `C:\Users\react\source\repos\graphOS\graphos\target\debug\build\graphos-kernel-9de8a0a16a52f098\build-script-build` (exit code: 101)
+  --- stdout
+  cargo:rerun-if-env-changed=PROFILE
+  cargo:rustc-env=GRAPHOS_BUILD_VERSION=0.1.0
+  cargo:rustc-env=GRAPHOS_BUILD_PROFILE=debug
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\.git\HEAD
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\.git\index
+  cargo:rustc-env=GRAPHOS_BUILD_GIT_SHA=0c3cbe883c75
+  cargo:rustc-env=GRAPHOS_BUILD_GIT_DIRTY=dirty
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\Cargo.toml
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\ai-console.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\appstored.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\artifactsd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\authn.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\calculator.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\compositor.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\editor.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\files.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\graphd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\greeter.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\init.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\launcher.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\mdm.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\modeld.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\netd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\notepad.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\paint.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\servicemgr.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\settings.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\shell3d.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\ssh.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\sshd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\sysd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\terminal.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\bin\trainerd.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\compositor_renderer.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\runtime.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\src\workspace_context.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\bootstrap.graph
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\link.ld
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\assets\config\modeld.cfg
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\assets\config\modeld-doctrine.txt
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\userspace\protected\kernel\linker.ld
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\Cargo.toml
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\accessibility.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\animation.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\canvas.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\clipboard.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\drag.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\event.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\lib.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\window.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\Cargo.toml
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\charts.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\geom.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\lib.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\native_views.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\substrate.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\tokens.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\toolkit.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\widgets.rs
+  cargo:rerun-if-changed=C:\Users\react\source\repos\graphOS\graphos\assets\config\modeld.cfg
+System.Management.Automation.RemoteException
+  --- stderr
+  warning: unused imports: `CullMode` and `FillMode`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\command.rs:31:29
+     |
+  31 |     BlendState, BufferKind, CullMode, DepthState, FillMode, IndexFormat, RasterState, Topology,
+     |                             ^^^^^^^^              ^^^^^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused import: `GpuCmd`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:29:37
+     |
+  29 | use crate::command::{CommandBuffer, GpuCmd, PixelFormat, ResourceId, ResourceKind};
+     |                                     ^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused import: `ResourceKind`
+   --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\resource.rs:7:47
+    |
+  7 | use crate::command::{PixelFormat, ResourceId, ResourceKind};
+    |                                               ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused import: `alloc::sync::Arc`
+   --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\sync.rs:8:5
+    |
+  8 | use alloc::sync::Arc;
+    |     ^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused imports: `AtomicBool` and `Ordering`
+   --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\sync.rs:9:26
+    |
+  9 | use core::sync::atomic::{AtomicBool, Ordering};
+    |                          ^^^^^^^^^^  ^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused imports: `BlendMode`, `GradientDir`, `PixelFormat`, and `ResourceKind`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\wire.rs:21:5
+     |
+  21 |     BlendMode, CommandBuffer, GpuCmd, GradientDir, PixelFormat, ResourceId, ResourceKind,
+     |     ^^^^^^^^^                         ^^^^^^^^^^^  ^^^^^^^^^^^              ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused imports: `BlendState`, `BufferKind`, `DepthState`, `IndexFormat`, `RasterState`, `Topology`, and `VertexLayout`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\wire.rs:24:5
+     |
+  24 |     BlendState, BufferKind, DepthState, IndexFormat, RasterState, Topology, VertexLayout,
+     |     ^^^^^^^^^^  ^^^^^^^^^^  ^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^^^^  ^^^^^^^^  ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning[E0133]: use of inline assembly is unsafe and requires unsafe block
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:66:5
+     |
+  66 | /     core::arch::asm!(
+  67 | |         "int 0x80",
+  68 | |         in("rax") nr,
+  69 | |         in("rdi") a0,
+  ...  |
+  72 | |         options(nostack)
+  73 | |     );
+     | |_____^ use of inline assembly
+     |
+     = note: inline assembly is entirely unchecked and can cause undefined behavior
+  note: an unsafe function restricts its caller, but its body is safe by default
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:64:1
+     |
+  64 | unsafe fn syscall2(nr: u64, a0: u64, a1: u64) -> u64 {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+     = note: `#[warn(unsafe_op_in_unsafe_fn)]` (part of `#[warn(rust_2024_compatibility)]`) on by default
+System.Management.Automation.RemoteException
+  warning[E0133]: use of inline assembly is unsafe and requires unsafe block
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:80:5
+     |
+  80 | /     core::arch::asm!(
+  81 | |         "int 0x80",
+  82 | |         in("rax") nr,
+  83 | |         in("rdi") a0,
+  84 | |         lateout("rax") ret,
+  85 | |         options(nostack)
+  86 | |     );
+     | |_____^ use of inline assembly
+     |
+     = note: inline assembly is entirely unchecked and can cause undefined behavior
+  note: an unsafe function restricts its caller, but its body is safe by default
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:78:1
+     |
+  78 | unsafe fn syscall1(nr: u64, a0: u64) -> u64 {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+System.Management.Automation.RemoteException
+  warning[E0133]: use of inline assembly is unsafe and requires unsafe block
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:93:5
+     |
+  93 | /     core::arch::asm!(
+  94 | |         "int 0x80",
+  95 | |         in("rax") nr,
+  96 | |         lateout("rax") ret,
+  97 | |         options(nostack)
+  98 | |     );
+     | |_____^ use of inline assembly
+     |
+     = note: inline assembly is entirely unchecked and can cause undefined behavior
+  note: an unsafe function restricts its caller, but its body is safe by default
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:91:1
+     |
+  91 | unsafe fn syscall0(nr: u64) -> u64 {
+     | ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+     = note: for more information, see <https://doc.rust-lang.org/edition-guide/rust-2024/unsafe-op-in-unsafe-fn.html>
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+     --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:159:13
+      |
+  159 |         let mut raw = RawCaps {
+      |             ----^^^
+      |             |
+      |             help: remove this `mut`
+      |
+      = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: constant `SYS_GPU_FENCE_WAIT` is never used
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\device.rs:52:7
+     |
+  52 | const SYS_GPU_FENCE_WAIT: u64 = 0x506; // SYS_GPU_FENCE_WAIT
+     |       ^^^^^^^^^^^^^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `push_u16` is never used
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\wire.rs:72:4
+     |
+  72 | fn push_u16(buf: &mut Vec<u8>, v: u16) {
+     |    ^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `push_f64` is never used
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\gfx\src\wire.rs:96:4
+     |
+  96 | fn push_f64(buf: &mut Vec<u8>, v: f64) {
+     |    ^^^^^^^^
+System.Management.Automation.RemoteException
+  For more information about this error, try `rustc --explain E0133`.
+  warning: `graphos-gfx` (lib) generated 14 warnings (run `cargo fix --lib -p graphos-gfx` to apply 11 suggestions)
+  warning: unused variable: `renderer`
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:311:9
+      |
+  311 |     let renderer = ChromeRenderer::new(*config);
+      |         ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_renderer`
+      |
+      = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused variable: `bar_w`
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:313:9
+      |
+  313 |     let bar_w = w as usize;
+      |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_bar_w`
+System.Management.Automation.RemoteException
+  warning: unused variable: `bar_h`
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:314:9
+      |
+  314 |     let bar_h = TITLEBAR_HEIGHT as usize;
+      |         ^^^^^ help: if this is intentional, prefix it with an underscore: `_bar_h`
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:267:15
+      |
+  267 |     let ret = unsafe { trap6(SYS_CHANNEL_CREATE, max_msg_size as u64, 0, 0, 0, 0, 0) };
+      |               ^^^^^^ unnecessary `unsafe` block
+      |
+      = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:278:15
+      |
+  278 |     let ret = unsafe { trap6(SYS_CHANNEL_CREATE, 4096u64, 0, 0, 0, 0, 0) };
+      |               ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:552:5
+      |
+  552 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:567:5
+      |
+  567 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:574:5
+      |
+  574 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:589:5
+      |
+  589 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:604:5
+      |
+  604 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:619:5
+      |
+  619 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:634:5
+      |
+  634 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:649:5
+      |
+  649 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:664:5
+      |
+  664 |     unsafe {
+      |     ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:98:5
+     |
+  98 |     pub x: u32,
+     |     ^^^^^^^^^^
+     |
+  note: the lint level is defined here
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\lib.rs:30:9
+     |
+  30 | #![warn(missing_docs)]
+     |         ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:99:5
+     |
+  99 |     pub y: u32,
+     |     ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:100:5
+      |
+  100 |     pub w: u32,
+      |     ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:101:5
+      |
+  101 |     pub h: u32,
+      |     ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:114:5
+      |
+  114 |     pub close: ButtonRect,
+      |     ^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:115:5
+      |
+  115 |     pub minimise: ButtonRect,
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\chrome.rs:116:5
+      |
+  116 |     pub maximise: ButtonRect,
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: direct cast of function item into an integer
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:187:50
+      |
+  187 |         ret_slot.write_volatile(thread_exit_stub as u64);
+      |                                                  ^^^^^^
+      |
+      = note: `#[warn(function_casts_as_integer)]` on by default
+  help: first cast to a pointer `as *const ()`
+      |
+  187 |         ret_slot.write_volatile(thread_exit_stub as *const () as u64);
+      |                                                  ++++++++++++
+System.Management.Automation.RemoteException
+  warning: constant `SYS_CHANNEL_RECV_inner` should have an upper case name
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\app-sdk\src\sys.rs:496:7
+      |
+  496 | const SYS_CHANNEL_RECV_inner: u64 = 0x103;
+      |       ^^^^^^^^^^^^^^^^^^^^^^
+      |
+      = note: `#[warn(non_upper_case_globals)]` (part of `#[warn(nonstandard_style)]`) on by default
+  help: convert the identifier to upper case
+      |
+  496 - const SYS_CHANNEL_RECV_inner: u64 = 0x103;
+  496 + const SYS_CHANNEL_RECV_INNER: u64 = 0x103;
+      |
+System.Management.Automation.RemoteException
+  warning: unused import: `Quat`
+   --> C:\Users\react\source\repos\graphOS\graphos\userspace\scene\src\animation.rs:4:19
+    |
+  4 | use crate::math::{Quat, Vec3};
+    |                   ^^^^
+    |
+    = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused import: `RenderPass`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\scene\src\graph.rs:13:42
+     |
+  13 | use crate::pass::{PassKind, RenderGraph, RenderPass};
+     |                                          ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused import: `Vec3`
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:58:25
+     |
+  58 | use crate::math::{Vec2, Vec3, Vec4};
+     |                         ^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused import: `roundf`
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\pipeline.rs:18:27
+     |
+  18 | use libm::{ceilf, floorf, roundf, sqrtf};
+     |                           ^^^^^^
+System.Management.Automation.RemoteException
+  warning: unused variable: `digit_start`
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:615:13
+      |
+  615 |         let digit_start = self.pos;
+      |             ^^^^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_digit_start`
+      |
+      = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused variable: `vary`
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:3653:25
+       |
+  3653 |             .map(|(pos, vary)| Val::Vec4([pos.x, pos.y, pos.z, pos.w]))
+       |                         ^^^^ help: if this is intentional, prefix it with an underscore: `_vary`
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\pipeline.rs:757:31
+      |
+  757 |                     let arg = unsafe { descs[t].as_ptr() } as u64;
+      |                               ^^^^^^ unnecessary `unsafe` block
+      |
+      = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unnecessary `unsafe` block
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\pipeline.rs:773:35
+      |
+  773 |                         let arg = unsafe { descs[t].as_ptr() } as u64;
+      |                                   ^^^^^^ unnecessary `unsafe` block
+System.Management.Automation.RemoteException
+  warning: unused variable: `band_max`
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\pipeline.rs:771:29
+      |
+  771 |                         let band_max = (band_min + band_size as i32 - 1).min(max_y);
+      |                             ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_band_max`
+System.Management.Automation.RemoteException
+  warning: method `peek` is never used
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:503:8
+      |
+  490 | impl<'a> Parser<'a> {
+      | ------------------- method in this implementation
+  ...
+  503 |     fn peek(&self) -> Option<char> {
+      |        ^^^^
+      |
+      = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `unpack_int` is never used
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:2725:4
+       |
+  2725 | fn unpack_int(p: u32) -> [i32; 4] {
+       |    ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `unpack_uint` is never used
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:2734:4
+       |
+  2734 | fn unpack_uint(p: u32) -> [u32; 4] {
+       |    ^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: associated function `make_texture_lod` is never used
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:3289:8
+       |
+  3207 | impl GlslShader {
+       | --------------- associated function in this implementation
+  ...
+  3289 |     fn make_texture_lod(
+       |        ^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: method `vertices_per_prim` is never used
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\glsl_interp.rs:3565:8
+       |
+  3564 | impl GeomPrimitive {
+       | ------------------ method in this implementation
+  3565 |     fn vertices_per_prim(self) -> usize {
+       |        ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `clip_near` is never used
+      --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\pipeline.rs:1133:4
+       |
+  1133 | fn clip_near<Y: Copy + LerpY>(inp: &[(Vec4, Y); 3], out: &mut [(Vec4, Y); 4]) -> usize {
+       |    ^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: direct cast of function item into an integer
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\gl-sdk\src\thread.rs:78:54
+     |
+  78 |             ret_slot.write_volatile(thread_exit_stub as u64);
+     |                                                      ^^^^^^
+     |
+     = note: `#[warn(function_casts_as_integer)]` on by default
+  help: first cast to a pointer `as *const ()`
+     |
+  78 |             ret_slot.write_volatile(thread_exit_stub as *const () as u64);
+     |                                                      ++++++++++++
+System.Management.Automation.RemoteException
+  warning: `graphos-app-sdk` (lib) generated 23 warnings (run `cargo fix --lib -p graphos-app-sdk` to apply 5 suggestions)
+  warning: `graphos-scene` (lib) generated 2 warnings (run `cargo fix --lib -p graphos-scene` to apply 2 suggestions)
+  warning: `graphos-gl` (lib) generated 14 warnings (run `cargo fix --lib -p graphos-gl` to apply 6 suggestions)
+  warning: unnecessary parentheses around assigned value
+     --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\passes.rs:396:20
+      |
+  396 |         let argb = ((alpha as u32) << 24);
+      |                    ^                    ^
+      |
+      = note: `#[warn(unused_parens)]` (part of `#[warn(unused)]`) on by default
+  help: remove these parentheses
+      |
+  396 -         let argb = ((alpha as u32) << 24);
+  396 +         let argb = (alpha as u32) << 24;
+      |
+System.Management.Automation.RemoteException
+  warning: unused import: `Quat`
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\desktop_scene.rs:35:12
+     |
+  35 |     math::{Quat, Vec3},
+     |            ^^^^
+     |
+     = note: `#[warn(unused_imports)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused variable: `g`
+     --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\passes.rs:110:29
+      |
+  110 |             Material::Glass(g) => ShadowMaterial {
+      |                             ^ help: if this is intentional, prefix it with an underscore: `_g`
+      |
+      = note: `#[warn(unused_variables)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: unused variable: `screen_w`
+     --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\passes.rs:336:5
+      |
+  336 |     screen_w: u32,
+      |     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_screen_w`
+System.Management.Automation.RemoteException
+  warning: unused variable: `screen_h`
+     --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\passes.rs:337:5
+      |
+  337 |     screen_h: u32,
+      |     ^^^^^^^^ help: if this is intentional, prefix it with an underscore: `_screen_h`
+System.Management.Automation.RemoteException
+  warning: field `0` is never read
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\render_graph.rs:89:13
+     |
+  89 |     Texture(TextureDesc),
+     |     ------- ^^^^^^^^^^^
+     |     |
+     |     field in this variant
+     |
+     = note: `ResourceEntry` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+  help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+     |
+  89 -     Texture(TextureDesc),
+  89 +     Texture(()),
+     |
+System.Management.Automation.RemoteException
+  warning: field `0` is never read
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\render_graph.rs:90:18
+     |
+  90 |     RenderTarget(RenderTargetDesc),
+     |     ------------ ^^^^^^^^^^^^^^^^
+     |     |
+     |     field in this variant
+     |
+     = note: `ResourceEntry` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+     |
+  90 -     RenderTarget(RenderTargetDesc),
+  90 +     RenderTarget(()),
+     |
+System.Management.Automation.RemoteException
+  warning: field `0` is never read
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\render_graph.rs:91:12
+     |
+  91 |     Buffer(BufferDesc),
+     |     ------ ^^^^^^^^^^
+     |     |
+     |     field in this variant
+     |
+     = note: `ResourceEntry` has a derived impl for the trait `Debug`, but this is intentionally ignored during dead code analysis
+  help: consider changing the field to be of unit type to suppress this warning while preserving the field numbering, or remove the field
+     |
+  91 -     Buffer(BufferDesc),
+  91 +     Buffer(()),
+     |
+System.Management.Automation.RemoteException
+  warning: field `panel_node` is never read
+    --> C:\Users\react\source\repos\graphOS\graphos\userspace\compositor\src\desktop_scene.rs:88:5
+     |
+  84 | pub struct DesktopScene {
+     |            ------------ field in this struct
+  ...
+  88 |     panel_node: NodeId,
+     |     ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:91:5
+     |
+  91 |     pub hovered: bool,
+     |     ^^^^^^^^^^^^^^^^^
+     |
+  note: the lint level is defined here
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\lib.rs:2:9
+     |
+   2 | #![warn(missing_docs)]
+     |         ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:92:5
+     |
+  92 |     pub pressed: bool,
+     |     ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:93:5
+     |
+  93 |     pub focused: bool,
+     |     ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for an associated function
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:97:5
+     |
+  97 |     pub const fn new() -> Self {
+     |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:141:5
+      |
+  141 |     pub checked: bool,
+      |     ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:142:5
+      |
+  142 |     pub hovered: bool,
+      |     ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:143:5
+      |
+  143 |     pub focused: bool,
+      |     ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for an associated function
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:147:5
+      |
+  147 |     pub const fn new(initial: bool) -> Self {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for an associated function
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:207:5
+      |
+  207 |     pub const fn new(count: usize) -> Self {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a variant
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:303:5
+      |
+  303 |     None,
+      |     ^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a variant
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:304:5
+      |
+  304 |     Primary,
+      |     ^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a variant
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:305:5
+      |
+  305 |     Cancel,
+      |     ^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:309:1
+      |
+  309 | pub struct DialogState {
+      | ^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:312:5
+      |
+  312 |     pub dismissed: bool,
+      |     ^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for an associated function
+     --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\interactive.rs:316:5
+      |
+  316 |     pub const fn new() -> Self {
+      |     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\substrate.rs:69:17
+     |
+  69 |     FrameTick { frame_id: FrameId, now_ms: u64 },
+     |                 ^^^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: missing documentation for a struct field
+    --> C:\Users\react\source\repos\graphOS\graphos\sdk\ui-sdk\src\substrate.rs:69:36
+     |
+  69 |     FrameTick { frame_id: FrameId, now_ms: u64 },
+     |                                    ^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: `graphos-compositor` (lib) generated 9 warnings (run `cargo fix --lib -p graphos-compositor` to apply 5 suggestions)
+  warning: `graphos-ui-sdk` (lib) generated 17 warnings
+  warning: variable does not need to be mutable
+     --> src\bin\calculator.rs:331:9
+      |
+  331 |     let mut cursor = if negative { 1 } else { 0 };
+      |         ----^^^^^^
+      |         |
+      |         help: remove this `mut`
+      |
+      = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: `graphos-protected-services` (bin "calculator") generated 1 warning (run `cargo fix --bin "calculator" -p graphos-protected-services` to apply 1 suggestion)
+  warning: unnecessary `unsafe` block
+    --> src\bin\authn.rs:57:17
+     |
+  57 |     let creds = unsafe { &raw const CREDENTIALS };
+     |                 ^^^^^^ unnecessary `unsafe` block
+     |
+     = note: `#[warn(unused_unsafe)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: field `pub_key` is never read
+    --> src\bin\authn.rs:39:5
+     |
+  37 | struct Credential {
+     |        ---------- field in this struct
+  38 |     user_uuid: [u8; UUID_LEN],
+  39 |     pub_key:   [u8; 65], // uncompressed P-256 point
+     |     ^^^^^^^
+     |
+     = note: `Credential` has a derived impl for the trait `Clone`, but this is intentionally ignored during dead code analysis
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `animation_frame` is never used
+     --> src\bin\compositor.rs:267:4
+      |
+  267 | fn animation_frame(now_ms: u64) -> u32 {
+      |    ^^^^^^^^^^^^^^^
+      |
+      = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `v3_add` is never used
+    --> src\bin\shell3d.rs:92:4
+     |
+  92 | fn v3_add(a: V3, b: V3) -> V3 { V3 { x: a.x + b.x, y: a.y + b.y, z: a.z + b.z } }
+     |    ^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `v3_sub` is never used
+    --> src\bin\shell3d.rs:93:4
+     |
+  93 | fn v3_sub(a: V3, b: V3) -> V3 { V3 { x: a.x - b.x, y: a.y - b.y, z: a.z - b.z } }
+     |    ^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `darken` is never used
+     --> src\bin\shell3d.rs:375:4
+      |
+  375 | fn darken(c: u32) -> u32 { blend(c, 0xFF000000, 120) }
+      |    ^^^^^^
+System.Management.Automation.RemoteException
+  warning: struct `Quad3` is never constructed
+     --> src\bin\shell3d.rs:396:8
+      |
+  396 | struct Quad3 {
+      |        ^^^^^
+System.Management.Automation.RemoteException
+  warning: function `world_quad` is never used
+     --> src\bin\shell3d.rs:401:4
+      |
+  401 | fn world_quad(center: V3, half_w: Fp, half_h: Fp) -> Quad3 {
+      |    ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `project_quad` is never used
+     --> src\bin\shell3d.rs:412:4
+      |
+  412 | fn project_quad(q: Quad3, orbit_x: i32, orbit_y: i32, fov: Fp, cx: i32, cy: i32)
+      |    ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_glass_quad` is never used
+     --> src\bin\shell3d.rs:428:4
+      |
+  428 | fn draw_glass_quad(canvas: &mut Canvas<'_>, s: &[(i32, i32); 4], tint: u32, alpha: u32) {
+      |    ^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_quad_edge` is never used
+     --> src\bin\shell3d.rs:445:4
+      |
+  445 | fn draw_quad_edge(canvas: &mut Canvas<'_>, s: &[(i32, i32); 4], color: u32) {
+      |    ^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_panel` is never used
+     --> src\bin\shell3d.rs:454:4
+      |
+  454 | fn draw_panel(canvas: &mut Canvas<'_>, x: i32, y: i32, w: u32, h: u32, border: u32, fill: u32) {
+      |    ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: `graphos-protected-services` (bin "authn") generated 2 warnings
+  warning: `graphos-protected-services` (bin "compositor") generated 1 warning
+  warning: `graphos-protected-services` (bin "shell3d") generated 9 warnings
+  warning: field `0` is never read
+     --> src\bin\appstored.rs:486:28
+      |
+  486 | pub struct AppstoreRequest(u64);
+      |            --------------- ^^^
+      |            |
+      |            field in this struct
+      |
+      = help: consider removing this field
+      = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `v3_add` is never used
+    --> src\bin\launcher.rs:91:4
+     |
+  91 | fn v3_add(a: V3, b: V3) -> V3 { V3 { x: a.x + b.x, y: a.y + b.y, z: a.z + b.z } }
+     |    ^^^^^^
+     |
+     = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `v3_sub` is never used
+    --> src\bin\launcher.rs:92:4
+     |
+  92 | fn v3_sub(a: V3, b: V3) -> V3 { V3 { x: a.x - b.x, y: a.y - b.y, z: a.z - b.z } }
+     |    ^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `darken` is never used
+     --> src\bin\launcher.rs:370:4
+      |
+  370 | fn darken(c: u32) -> u32 { blend(c, 0xFF000000, 120) }
+      |    ^^^^^^
+System.Management.Automation.RemoteException
+  warning: struct `Quad3` is never constructed
+     --> src\bin\launcher.rs:391:8
+      |
+  391 | struct Quad3 {
+      |        ^^^^^
+System.Management.Automation.RemoteException
+  warning: function `world_quad` is never used
+     --> src\bin\launcher.rs:396:4
+      |
+  396 | fn world_quad(center: V3, half_w: Fp, half_h: Fp) -> Quad3 {
+      |    ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `project_quad` is never used
+     --> src\bin\launcher.rs:407:4
+      |
+  407 | fn project_quad(q: Quad3, orbit_x: i32, orbit_y: i32, fov: Fp, cx: i32, cy: i32)
+      |    ^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_glass_quad` is never used
+     --> src\bin\launcher.rs:423:4
+      |
+  423 | fn draw_glass_quad(canvas: &mut Canvas<'_>, s: &[(i32, i32); 4], tint: u32, alpha: u32) {
+      |    ^^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_quad_edge` is never used
+     --> src\bin\launcher.rs:440:4
+      |
+  440 | fn draw_quad_edge(canvas: &mut Canvas<'_>, s: &[(i32, i32); 4], color: u32) {
+      |    ^^^^^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: function `draw_panel` is never used
+     --> src\bin\launcher.rs:449:4
+      |
+  449 | fn draw_panel(canvas: &mut Canvas<'_>, x: i32, y: i32, w: u32, h: u32, border: u32, fill: u32) {
+      |    ^^^^^^^^^^
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+    --> src\bin\sshd.rs:81:13
+     |
+  81 |         let mut pos = 0;
+     |             ----^^^
+     |             |
+     |             help: remove this `mut`
+     |
+     = note: `#[warn(unused_mut)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+     --> src\bin\sshd.rs:272:17
+      |
+  272 |             let mut c = d0 >> 26; h0 = (d0 as u32) & 0x3ffffff;
+      |                 ----^
+      |                 |
+      |                 help: remove this `mut`
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+     --> src\bin\sshd.rs:274:17
+      |
+  274 |             let mut c = d1 >> 26; h1 = (d1 as u32) & 0x3ffffff;
+      |                 ----^
+      |                 |
+      |                 help: remove this `mut`
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+     --> src\bin\sshd.rs:276:17
+      |
+  276 |             let mut c = d2 >> 26; h2 = (d2 as u32) & 0x3ffffff;
+      |                 ----^
+      |                 |
+      |                 help: remove this `mut`
+System.Management.Automation.RemoteException
+  warning: variable does not need to be mutable
+     --> src\bin\sshd.rs:278:17
+      |
+  278 |             let mut c = d3 >> 26; h3 = (d3 as u32) & 0x3ffffff;
+      |                 ----^
+      |                 |
+      |                 help: remove this `mut`
+System.Management.Automation.RemoteException
+  warning: value assigned to `m` is never read
+     --> src\bin\sshd.rs:350:13
+      |
+  350 |             m = !m;
+      |             ^^^^^^
+      |
+      = help: maybe it is overwritten before being read?
+      = note: `#[warn(unused_assignments)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: constant `MSG_DISCONNECT` is never used
+      --> src\bin\sshd.rs:1120:7
+       |
+  1120 | const MSG_DISCONNECT: u8 = 1;
+       |       ^^^^^^^^^^^^^^
+       |
+       = note: `#[warn(dead_code)]` (part of `#[warn(unused)]`) on by default
+System.Management.Automation.RemoteException
+  warning: function `hmac` is never used
+     --> src\bin\sshd.rs:138:12
+      |
+  138 |     pub fn hmac(key: &[u8], msg: &[u8]) -> [u8; 32] {
+      |            ^^^^
+System.Management.Automation.RemoteException
+  warning: constant `D` is never used
+     --> src\bin\sshd.rs:633:11
+      |
+  633 |     const D: Gf = [0xd34a,0x8f25,0x9a9f,0xa498,0x3fad,0x25d2,0x6a3a,0x4b89,
+      |           ^
+System.Management.Automation.RemoteException
+  warning: `graphos-protected-services` (bin "appstored") generated 1 warning
+  warning: `graphos-protected-services` (bin "launcher") generated 9 warnings
+  warning: `graphos-protected-services` (bin "sshd") generated 9 warnings (run `cargo fix --bin "sshd" -p graphos-protected-services` to apply 5 suggestions)
+      Finished `release` profile [optimized] target(s) in 0.10s
+System.Management.Automation.RemoteException
+  thread 'main' (27292) panicked at kernel\build.rs:359:39:
+  failed to read C:\Users\react\source\repos\graphOS\graphos\assets\config\modeld-doctrine.txt: The system cannot find the file specified. (os error 2)
+  note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
+C:\Users\react\source\repos\graphOS\graphos\scripts\boot.ps1 : Kernel build failed
+At line:1 char:134
++ ... art-Transcript -Path $t -Force | Out-Null; ./scripts/boot.ps1; $code  ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorException,boot.ps1
+C:\Users\react\source\repos\graphOS\graphos\scripts\boot.ps1 : Kernel build
+failed
+At line:1 char:134
++ ... art-Transcript -Path $t -Force | Out-Null; ./scripts/boot.ps1; $code  ...
++                                                ~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (:) [Write-Error], WriteErrorExcep
+   tion
+    + FullyQualifiedErrorId : Microsoft.PowerShell.Commands.WriteErrorExceptio
+   n,boot.ps1
+
+**********************
+Windows PowerShell transcript end
+End time: 20260422200856
+**********************
